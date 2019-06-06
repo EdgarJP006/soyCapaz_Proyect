@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/cropped-favicon-192x192.png" />
+    <title>Kiddy - Children HTML Template</title>
+
+    <link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/jquery.fancybox.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/select2.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/animate.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/main.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/shop.css' type='text/css' media='all' />
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+    <link rel='stylesheet' href='tuner/style.css' type='text/css' media='all' />
+    <link rel="icon" href="img/cropped-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="img/cropped-favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="img/cropped-favicon-180x180.png">
+    <meta name="msapplication-TileImage" content="img/cropped-favicon-270x270.png">
+</head>
+
+<body class="page wide wave-style">
+    <div class="page">
+        <!-- top panel -->
+        <div class='site_top_panel wave slider'>
+            <!-- canvas -->
+            <div class='top_half_sin_wrapper'>
+                <canvas class='top_half_sin' data-bg-color='#ffffff' data-line-color='#ffffff'></canvas>
+            </div>
+            <!-- / canvas -->
+            <!-- top panekl main container -->
+            <div class='container'>
+                <div class='row_text_search'>
+                    <div id='top_panel_text'><a href="tel:1-800-123-45678"><i class="fa fa-phone-square"></i> 1-800-123-45678 </a>;
+                        <a href="mailto:mail@mail.com"> <i class="fa fa-envelope-o"></i>mail@mail.com</a>
+                    </div>
+                    <form method="get" class="search-form" action="#">
+                        <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="text" class="search-field vova" value="" name="s" title="Search for:" />
+                        </label>
+                        <input type="submit" class="search-submit" value="Search" />
+                        <input type='hidden' name='lang' value='en' />
+                    </form>
+                </div>
+                <div id='top_panel_links'>
+                    <div class='search_icon'></div>
+                    <div id='top_social_links_wrapper'>
+                        <div class='share-toggle-button'><i class='share-icon fa fa-share-alt'></i></div>
+                        <div class='cws_social_links'><a href='http://twitter.com/' class='cws_social_link' title='Twitter'><i class='share-icon fa fa-twitter'></i></a><a href='http://facebook.com/' class='cws_social_link' title='Facebook'><i class='share-icon fa fa-facebook'></i></a><a href='http://dribbble.com/' class='cws_social_link' title='Dribbble'><i class='share-icon fa fa-dribbble'></i></a><a href='https://plus.google.com/' class='cws_social_link' title='Google'><i class='share-icon fa fa-google-plus'></i></a></div>
+                    </div>
+                    <div class='mini-cart'> <a class="woo_icon" href="features-shop-cart.html" title="View your shopping cart"><i class='woo_mini-count fa fa-shopping-cart'><span>2</span></i></a>
+                        <div class="woo_mini_cart">
+                            <!-- start product list -->
+                            <ul class="cart_list product_list_widget">
+                                <li>
+                                    <a href="#" class="remove" title="Remove this item">×</a>
+                                    <a href="shop-single-product.html">
+                                        <img width="180" height="180" src="pic/shop/58x58-bag.jpg" class="attachment-shop_thumbnail" alt="poster_2_up">Bag&nbsp; </a>
+                                    <span class="quantity">1 × <span class="amount">£12.00</span></span>
+                                </li>
+                                <li>
+                                    <a href="#" class="remove" title="Remove this item">×</a>
+                                    <a href="shop-single-product.html">
+                                        <img width="180" height="180" src="pic/shop/58x58-basket.jpg" class="attachment-shop_thumbnail" alt="T_7_front">Basket&nbsp; </a>
+                                    <span class="quantity">1 × <span class="amount">£18.00</span></span>
+                                </li>
+                            </ul>
+                            <!-- end product list -->
+                            <p class="total"><strong>Subtotal:</strong> <span class="amount">£30.00</span></p>
+                            <p class="buttons">
+                                <a href="features-shop-cart.html" class="button wc-forward">View Cart</a>
+                                <a href="features-shop-checkout.html" class="button checkout wc-forward">Checkout</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lang_bar">
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="#" class="lang_sel_sel icl-en"><img class="iclflag" src="img/en.png" alt="en" title="English" /> &nbsp;English
+                                    </a>
+                                    <ul>
+                                        <li class="icl-fr">
+                                            <a href="#"><img class="iclflag" src="img/fr.png" alt="fr" title="Français" />&nbsp;Français</a>
+                                        </li>
+                                        <li class="icl-de">
+                                            <a href="#"><img class="iclflag" src="img/de.png" alt="de" title="Deutsch" />&nbsp;Deutsch</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="site_top_panel_toggle"></div>
+            </div>
+            <!-- / top panel main container -->
+        </div>
+        <!-- / top panel -->
+        <!-- header container -->
+        <div class='header_cont'>
+            <div class='header_mask'>
+                <div class='header_pattern'></div>
+                <div class='header_img'></div>
+            </div>
+            <header class='site_header logo-in-menu' data-menu-after="3">
+                <div class="header_box">
+                    <div class="container">
+                        <!-- logo -->
+                        <div class="header_logo_part with_border" role="banner">
+                            <a class="logo" href="index-2.html"><img src='img/logo1-304vqrnv7ccxz47xp4tw5m.png' data-at2x='img/logo1-304vqrnv7ccxz47xp4tw5m@2x.png' alt /></a>
+                        </div>
+                        <!-- / logo -->
+                        <!-- menu -->
+                        <div class="header_nav_part">
+                            <nav class="main-nav-container a-right">
+                                <div class="mobile_menu_header">
+                                    <i class="mobile_menu_switcher"><span></span><span></span><span></span></i>
+                                </div>
+                                <ul id="menu-main-menu" class="main-menu menu-bees">
+                                    <!-- menu item -->
+                                    <li class="menu-item menu-item-has-children bees-start">
+                                        <a href="index-2.html">
+                                            <div class="bees bees-start"><span></span>
+                                                <div class="line-one"></div>
+                                                <div class="line-two"></div>
+                                            </div>Home
+                                            <div class="canvas_wrapper">
+                                                <canvas class="menu_dashed"></canvas>
+                                            </div>
+                                        </a>
+                                        <span class='button_open'></span>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                            </li>
+                                            <li class="menu-item"><a href="index-2.html">Learn&#038;Play</a></li>
+                                            <li class="menu-item"><a href="babysitter.html">Babysitter</a></li>
+                                            <li class="menu-item"><a href="store.html">Store</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item menu-item-has-children"><a href="features-benefits.html">Features<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                        <span class='button_open'></span>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                            </li>
+                                            <li class="menu-item"><a href="features-benefits.html">Template Benefits</a></li>
+                                            <li class="menu-item"><a href="features-shop-ready.html">Shop Ready</a></li>
+                                            <li class="menu-item"><a href="features-content-elements.html">Content Elements</a></li>
+                                            <li class="menu-item menu-item-has-children"><a href="features-shop.html">Shop</a>
+                                                <span class='button_open'></span>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                    </li>
+                                                    <li class="menu-item"><a href="features-shop.html">Shop</a></li>
+                                                    <li class="menu-item"><a href="features-shop-cart.html">Cart</a></li>
+                                                    <li class="menu-item"><a href="features-shop-checkout.html">Checkout</a></li>
+                                                    <li class="menu-item"><a href="features-my-account.html">My Account</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item menu-item-has-children"><a href="page-about-us.html">Pages<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                        <span class='button_open'></span>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                            </li>
+                                            <li class="menu-item"><a href="page-about-us.html">About Us</a></li>
+                                            <li class="menu-item"><a href="page-services-2.html">Services</a></li>
+                                            <li class="menu-item"><a href="page-our-process.html">Our Process</a></li>
+                                            <li class="menu-item"><a href="page-our-team.html">Our Team</a></li>
+                                            <li class="menu-item"><a href="page-right-sidebar.html">Right Sidebar</a></li>
+                                            <li class="menu-item"><a href="page-left-sidebar.html">Left Sidebar</a></li>
+                                            <li class="menu-item"><a href="page-double-sidebars.html">Double Sidebars</a></li>
+                                            <li class="menu-item"><a href="page-full-width.html">Full Width</a></li>
+                                            <li class="menu-item"><a href="page-faq.html">FAQ</a></li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="page-404.html">404 Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item menu-item-has-children right"><a href="portfolio-four-columns.html">Portfolio<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                        <span class='button_open'></span>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                            </li>
+                                            <li class="menu-item"><a href="portfolio-one-column.html">One Column</a></li>
+                                            <li class="menu-item"><a href="portfolio-two-columns.html">Two Columns</a></li>
+                                            <li class="menu-item"><a href="portfolio-three-columns.html">Three Columns</a></li>
+                                            <li class="menu-item"><a href="portfolio-four-columns.html">Four Columns</a></li>
+                                            <li class="menu-item"><a href="portfolio-filtered.html">With Sidebar</a></li>
+                                            <li class="menu-item"><a href="portfolio-gallery.html">Gallery</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item menu-item-has-children right"><a href="blog-right-sidebar.html">Blog<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                        <span class='button_open'></span>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children"><a href="blog-one-column.html">Columns</a>
+                                                <span class='button_open'></span>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                    </li>
+                                                    <li class="menu-item"><a href="blog-one-column.html">One Column</a></li>
+                                                    <li class="menu-item"><a href="blog-two-columns.html">Two Columns</a></li>
+                                                    <li class="menu-item"><a href="blog-three-columns.html">Three Columns</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children"><a href="blog-right-sidebar.html">With Sidebar</a>
+                                                <span class='button_open'></span>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                    </li>
+                                                    <li class="menu-item"><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+                                                    <li class="menu-item"><a href="blog-right-sidebar.html">Right Sidebar</a></li>
+                                                    <li class="menu-item"><a href="blog-double-sidebars.html">Double Sidebars</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item"><a href="blog-larg-images.html">Large Images</a></li>
+                                            <li class="menu-item"><a href="blog-medium-images.html">Medium Images</a></li>
+                                            <li class="menu-item"><a href="blog-small-images.html">Small Images</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item current-menu-item page_item current_page_item right bees-end">
+                                        <a href="contact-us.html">
+                                            <div class="bees bees-end"><span></span>
+                                                <div class="line-one"></div>
+                                                <div class="line-two"></div>
+                                            </div>Contact
+                                            <div class="canvas_wrapper">
+                                                <canvas class="menu_dashed"></canvas>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- / menu item -->
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- #masthead -->
+        </div>
+        <!-- breadcrumbs -->
+        <section class='page_title wave'>
+            <div class='container'>
+                <div class='title'>
+                    <h1>Contact us</h1></div>
+                <nav class="bread-crumbs"><a href="index-2.html" >Home</a><i class="delimiter fa fa-chevron-right"></i><span class="current">Contact us</span></nav>
+                <!-- .breadcrumbs -->
+            </div>
+            <canvas class='breadcrumbs' data-bg-color='#f8f2dc' data-line-color='#f9e8b2'></canvas>
+        </section>
+        <!-- / breadcrumbs -->
+        <!-- main container -->
+        <div id="main" class="site-main">
+            <div class="page_content">
+                <!-- pattern container / -->
+                <div class='left-pattern pattern pattern-2'></div>
+                <!-- main content -->
+                <main>
+                    <!-- map -->
+                    <div class='grid_row clearfix' style='padding-top: 0px;padding-bottom: 0px;'>
+                        <div class='grid_col grid_col_12'>
+                            <div class='ce clearfix'>
+                                <h3 class="ce_title">How To Find Us</h3>
+                                <div class="map-border">
+                                    <div class="google-map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25295.930156304785!2d16.371063311644324!3d48.208404844730474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07986fcad78b%3A0x73f5a4d267cc4174!2zTmFnbGVyZ2Fzc2UgMTAsIDEwMTAgV2llbiwg0JDQstGB0YLRgNC40Y8!5e0!3m2!1sru!2sua!4v1453294615596" width="1170" height="450" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / map -->
+                    <div class='grid_row clearfix'>
+                        <!-- contact detail -->
+                        <div class='grid_col grid_col_4'>
+                            <div class='ce clearfix'>
+                                <h3 class="ce_title">Contact Details</h3>
+                                <div>
+                                    <div class='cws_fa_tbl'>
+                                        <div class='cws_fa_tbl_row'>
+                                            <div class='cws_fa_tbl_cell size_1x'>
+                                                <div class='cws_fa_wrapper'><i class='cws_fa fa fa-1x fa-location-arrow'></i><span class='ring'></span></div>
+                                            </div>
+                                            <div class='cws_fa_tbl_cell'>
+                                                <h2>Address:</h2></div>
+                                        </div>
+                                        <div class='cws_fa_tbl_row'>
+                                            <div class='cws_fa_tbl_cell'></div>
+                                            <div class='cws_fa_tbl_cell'>
+                                                <p>Biscayne Blvd. (North) 11st Floor New World Tower Miami, Florida 33148
+                                                    <br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='cws_fa_tbl'>
+                                        <div class='cws_fa_tbl_row'>
+                                            <div class='cws_fa_tbl_cell size_1x'>
+                                                <div class='cws_fa_wrapper'><i class='cws_fa fa fa-1x fa-clock-o'></i><span class='ring'></span></div>
+                                            </div>
+                                            <div class='cws_fa_tbl_cell'>
+                                                <h2>Monday &#8211; Friday</h2></div>
+                                        </div>
+                                        <div class='cws_fa_tbl_row'>
+                                            <div class='cws_fa_tbl_cell'></div>
+                                            <div class='cws_fa_tbl_cell'>
+                                                <p>8:00AM &#8211; 5:00PM
+                                                    <br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='cws_fa_tbl'>
+                                        <div class='cws_fa_tbl_row'>
+                                            <div class='cws_fa_tbl_cell size_1x'>
+                                                <div class='cws_fa_wrapper'><i class='cws_fa fa fa-1x fa-phone'></i><span class='ring'></span></div>
+                                            </div>
+                                            <div class='cws_fa_tbl_cell'>
+                                                <h2>Phones:</h2></div>
+                                        </div>
+                                        <div class='cws_fa_tbl_row'>
+                                            <div class='cws_fa_tbl_cell'></div>
+                                            <div class='cws_fa_tbl_cell'>
+                                                <p><a href="tel:1-800-123-45678"> 1-800-123-45678</a>
+                                                    <br />
+                                                    <a href="tel:1-800-123-45679"> 1-800-123-45679</a>
+                                                    <br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='cws_fa_tbl'>
+                                        <div class='cws_fa_tbl_row'>
+                                            <div class='cws_fa_tbl_cell size_1x'>
+                                                <div class='cws_fa_wrapper'><i class='cws_fa fa fa-1x fa-envelope'></i><span class='ring'></span></div>
+                                            </div>
+                                            <div class='cws_fa_tbl_cell'>
+                                                <h2>E-mail:</h2></div>
+                                        </div>
+                                        <div class='cws_fa_tbl_row'>
+                                            <div class='cws_fa_tbl_cell'></div>
+                                            <div class='cws_fa_tbl_cell'>
+                                                <p><a href="mailto:mail@mail.com"> mail@mail.com</a>
+                                                    <br />
+                                                    <a href="http://www.creaws.com/"> www.creaws.com</a>
+                                                    <br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / contact detail -->
+                        <!-- contact form -->
+                        <div class='grid_col grid_col_8'>
+                            <div class='ce clearfix'>
+                                <h3 class="ce_title">Drop us a line</h3>
+                                <div>
+                                    <div role="form" class="cf" id="cf-f16-p10-o1" lang="en-US" dir="ltr">
+                                        <div class="screen-reader-response"></div>
+                                        <form action="http://html.cwsthemes.com/kiddy/php/contacts-process.php" method="post" class="cf-form contact-form" novalidate="novalidate">
+                                            <p>Name*
+                                                <br />
+                                                <span class="cf-form-control-wrap your-name"><input type="text" name="name" value="" size="107" class="cf-form-control cf-text cf-validates-as-required" aria-required="true" aria-invalid="false" /></span> </p>
+                                            <p>Email*
+                                                <br />
+                                                <span class="cf-form-control-wrap your-email"><input type="email" name="email" value="" size="107" class="cf-form-control cf-text cf-email cf-validates-as-required cf-validates-as-email" aria-required="true" aria-invalid="false" /></span> </p>
+                                            <p>Message
+                                                <br />
+                                                <span class="cf-form-control-wrap your-message"><textarea name="message" cols="107" rows="8" class="cf-form-control cf-textarea" aria-invalid="false"></textarea></span> </p>
+                                            <p>
+                                                <span class="captcha-wrapper">
+                                                    <iframe src="php/capcha.html" class="capcha-frame" name="capcha_image_frame"></iframe>
+                                                    <input class="verify" type="text" id="verify" name="verify" />
+                                                </span>
+                                                <input type="submit" value="Send" class="cf-form-control cf-submit" />
+                                            </p>
+                                            <div class="cws_msg_box error-box clearfix">
+                                                <div class="icon_section"><i class="fa fa-exclamation"></i></div>
+                                                <div class="content_section">
+                                                    <div class="msg_box_title">Error box</div>
+                                                    <div class="msg_box_text"></div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="email_server_responce"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / conatct form -->
+                    </div>
+                </main>
+                <!-- / main content -->
+                <!-- patter container / -->
+                <div class='right-pattern pattern pattern-2'></div>
+                <!-- footer image container / -->
+                <div class="footer_image"></div>
+            </div>
+            <!-- svg filter -->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" style='display:none;'>
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+            <!-- / svg filter -->
+        </div>
+        <!-- #main -->
+        <!-- footer -->
+        <div class='footer_wrapper_copyright'>
+            <!-- canvas -->
+            <div class='half_sin_wrapper'>
+                <canvas class='half_sin' data-bg-color='23,108,129' data-line-color='23,108,129'></canvas>
+            </div>
+            <!-- / canvas -->
+            <!-- footer content -->
+            <footer class='page_footer'>
+                <div class='container'>
+                    <div class='footer_container'>
+                        <!-- widget recent post -->
+                        <div class="cws-widget">
+                            <div class="widget-title">Our News</div>
+                            <div class='widget_carousel'>
+                                <div class='item'>
+                                    <!-- post item -->
+                                    <div class='post_item'>
+                                        <div class='post_preview clearfix'>
+                                            <a href='blog-post.html' class='post_thumb_wrapp pic'><img class='post_thumb' src='pic/bfi_thumb/58x58-portfolio_7-304vqm0b4ukllinncov4ei.jpg' data-at2x='pic/bfi_thumb/58x58-portfolio_7-304vqm0b4ukllinncov4ei@2x.jpg' alt />
+                                                <div class='hover-effect'></div>
+                                                <div class='links'><span class='fa fa-link'></span></div>
+                                            </a>
+                                            <div class='post_title'><a href='blog-post.html'>Morbi iaculis</a></div>
+                                            <div class='post_content'>Quisque in nulla ut metus <a href='blog-post.html'>...</a></div>
+                                            <div class='post_date'>March 24, 2015</div>
+                                        </div>
+                                    </div>
+                                    <!-- / post item -->
+                                    <!-- post item -->
+                                    <div class='post_item'>
+                                        <div class='post_preview clearfix'>
+                                            <a href='blog-post.html' class='post_thumb_wrapp pic'><img class='post_thumb' src='pic/bfi_thumb/58x58-blog_3_col_3-304vqj49s4b9oehlhrm1hm.jpg' data-at2x='pic/bfi_thumb/58x58-blog_3_col_3-304vqj49s4b9oehlhrm1hm@2x.jpg' alt />
+                                                <div class='hover-effect'></div>
+                                                <div class='links'><span class='fa fa-link'></span></div>
+                                            </a>
+                                            <div class='post_title'><a href='blog-post.html'>Praesent sagittis</a></div>
+                                            <div class='post_content'>Maecenas vel elit at dui <a href='blog-post.html'>...</a></div>
+                                            <div class='post_date'>March 24, 2015</div>
+                                        </div>
+                                    </div>
+                                    <!-- / post item -->
+                                    <!-- post item -->
+                                    <div class='post_item'>
+                                        <div class='post_preview clearfix'>
+                                            <a href='blog-post.html' class='post_thumb_wrapp pic'><img class='post_thumb' src='pic/bfi_thumb/58x58-portfolio_4-304vqkvlk7rwl2xsvw77yi.jpg' data-at2x='pic/bfi_thumb/58x58-portfolio_4-304vqkvlk7rwl2xsvw77yi@2x.jpg' alt />
+                                                <div class='hover-effect'></div>
+                                                <div class='links'><span class='fa fa-link'></span></div>
+                                            </a>
+                                            <div class='post_title'><a href='blog-post.html'>Morbi iaculis euismod</a></div>
+                                            <div class='post_content'>Aenean molestie faucibus <a href='blog-post.html'>...</a></div>
+                                            <div class='post_date'>March 22, 2015</div>
+                                        </div>
+                                    </div>
+                                    <!-- / post item -->
+                                </div>
+                                <div class='item'>
+                                    <!-- post item -->
+                                    <div class='post_item'>
+                                        <div class='post_preview clearfix'>
+                                            <div class='post_title'><a href='blog-post.html'>Gallery post</a></div>
+                                            <div class='post_content'>Quisque in nulla ut metus <a href='blog-post.html'>...</a></div>
+                                            <div class='post_date'>March 20, 2015</div>
+                                        </div>
+                                    </div>
+                                    <!-- / post item -->
+                                    <!-- post item -->
+                                    <div class='post_item'>
+                                        <div class='post_preview clearfix'>
+                                            <a href='blog-post.html' class='post_thumb_wrapp pic'><img class='post_thumb' src='pic/bfi_thumb/58x58-blog_3_col_2-304vqh8f5qbfzoaipru7ey.jpg' data-at2x='pic/bfi_thumb/58x58-blog_3_col_2-304vqh8f5qbfzoaipru7ey@2x.jpg' alt />
+                                                <div class='hover-effect'></div>
+                                                <div class='links'><span class='fa fa-link'></span></div>
+                                            </a>
+                                            <div class='post_title'><a href='blog-post.html'>Ut wisi enim</a></div>
+                                            <div class='post_content'>Aenean molestie faucibus <a href='blog-post.html'>...</a></div>
+                                            <div class='post_date'>February 28, 2015</div>
+                                        </div>
+                                    </div>
+                                    <!-- / post item -->
+                                    <!-- post item -->
+                                    <div class='post_item'>
+                                        <div class='post_preview clearfix'>
+                                            <a href='blog-post.html' class='post_thumb_wrapp pic'><img class='post_thumb' src='pic/bfi_thumb/58x58-blog_3_col_1-304vqguumupvnj1wk6a8lm.jpg' data-at2x='pic/bfi_thumb/58x58-blog_3_col_1-304vqguumupvnj1wk6a8lm@2x.jpg' alt />
+                                                <div class='hover-effect'></div>
+                                                <div class='links'><span class='fa fa-link'></span></div>
+                                            </a>
+                                            <div class='post_title'><a href='blog-post.html'>Image post</a></div>
+                                            <div class='post_content'>Quisque in nulla ut metus <a href='blog-post.html'>...</a></div>
+                                            <div class='post_date'>February 25, 2015</div>
+                                        </div>
+                                    </div>
+                                    <!-- / post item -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / widget recent post -->
+                        <!-- twitter -->
+                        <div class="cws-widget">
+                            <div class="widget-title">Twitter Feed</div>
+                            <div class='cws_tweets tweets_carousel paginated'>
+                                <div class='twitter-carousel cws_tweet'></div>
+                            </div>
+                        </div>
+                        <!-- / twitter -->
+                        <!-- widget gallery -->
+                        <div class="cws-widget">
+                            <div class="widget-title">Gallery</div>
+                            <div class='cws_textwidget_content'>
+                                <div class='text'>
+                                    <div id='gallery-1' class='gallery galleryid-10 gallery-columns-3 gallery-size-thumbnail'>
+                                        <!-- gallery item -->
+                                        <div class='gallery-item'>
+                                            <div class='gallery-icon landscape'>
+                                                <img src="pic/2015/02/blog_3_col_2-150x150.jpg" class="attachment-thumbnail" alt="blog_3_col_2" />
+                                            </div>
+                                        </div>
+                                        <!-- / galery item -->
+                                        <!-- galery item -->
+                                        <div class='gallery-item'>
+                                            <div class='gallery-icon landscape'>
+                                                <img src="pic/2015/02/blog_3_col_1-150x150.jpg" class="attachment-thumbnail" alt="blog_3_col_1" />
+                                            </div>
+                                        </div>
+                                        <!-- / galery item -->
+                                        <!-- galery item -->
+                                        <div class='gallery-item'>
+                                            <div class='gallery-icon landscape'>
+                                                <img src="pic/2015/04/pic_double_sidebar_1-150x150.jpg" class="attachment-thumbnail" alt="pic_double_sidebar_1" />
+                                            </div>
+                                        </div>
+                                        <br style="clear: both" />
+                                        <div class='gallery-item'>
+                                            <div class='gallery-icon landscape'>
+                                                <img src="pic/2015/04/pic_typorgaphy-150x150.jpg" class="attachment-thumbnail" alt="pic_typorgaphy" />
+                                            </div>
+                                        </div>
+                                        <!-- / galery item -->
+                                        <!-- galery item -->
+                                        <div class='gallery-item'>
+                                            <div class='gallery-icon landscape'>
+                                                <img src="pic/2015/08/portfolio_3-150x150.jpg" class="attachment-thumbnail" alt="portfolio_3" />
+                                            </div>
+                                        </div>
+                                        <!-- / galery item -->
+                                        <!-- galery item -->
+                                        <div class='gallery-item'>
+                                            <div class='gallery-icon landscape'>
+                                                <img src="pic/2015/08/portfolio_6-150x150.jpg" class="attachment-thumbnail" alt="portfolio_6" />
+                                            </div>
+                                        </div>
+                                        <br style="clear: both" />
+                                        <div class='gallery-item'>
+                                            <div class='gallery-icon landscape'>
+                                                <img src="pic/2015/08/portfolio_4-150x150.jpg" class="attachment-thumbnail" alt="portfolio_4" />
+                                            </div>
+                                        </div>
+                                        <!-- / galery item -->
+                                        <!-- galery item -->
+                                        <div class='gallery-item'>
+                                            <div class='gallery-icon landscape'>
+                                                <img src="pic/2015/08/portfolio_7-150x150.jpg" class="attachment-thumbnail" alt="portfolio_7" />
+                                            </div>
+                                        </div>
+                                        <!-- / galery item -->
+                                        <!-- galery item -->
+                                        <div class='gallery-item'>
+                                            <div class='gallery-icon'>
+                                                <img width="1" height="1" src="pic/2015/03/blog_3_col_3.jpg" class="attachment-thumbnail" alt="blog_3_col_3" />
+                                            </div>
+                                        </div>
+                                        <!-- / gallery item -->
+                                        <br style="clear: both" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / gallery item -->
+                        <!-- contact form -->
+                        <div class="cws-widget">
+                            <div class="widget-title">Shoot a Message</div>
+                            <div class="textwidget">
+                                <div role="form" class="cf" id="cf-f1705-o2" lang="en-US" dir="ltr">
+                                    <div class="screen-reader-response"></div>
+                                    <form action="http://html.cwsthemes.com/kiddy/php/contacts-process.php" method="post" class="cf-form contact-form" novalidate="novalidate">
+                                        <p><span class="cf-form-control-wrap your-name"><input type="text" name="name" value="" size="60" class="" aria-required="true" aria-invalid="false" placeholder="Name" /></span></p>
+                                        <p><span class="cf-form-control-wrap your-email"><input type="email" name="email" value="" size="60" class="" aria-required="true" aria-invalid="false" placeholder="E-mail" /></span></p>
+                                        <p><span class="cf-form-control-wrap your-message"><textarea name="message" cols="39" rows="6" class="" aria-invalid="false" placeholder="Message"></textarea></span></p>
+                                        <p>
+                                            <input type="submit" value="Send" class="cf-form-control cf-submit" />
+                                        </p>
+                                    </form>
+                                    <div class="email_server_responce"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / conatct form -->
+                    </div>
+                </div>
+            </footer>
+            <!-- copyright -->
+            <div class='copyrights_area'>
+                <div class='half_sin_wrapper'>
+                    <canvas class='footer_half_sin' data-bg-color='14,64,77' data-line-color='14,64,77'></canvas>
+                </div>
+                <div class='container'>
+                    <div class='copyrights_container'>
+                        <div class='copyrights'><a target="_blank" href="http://www.templatespoint.net">TemplatesPoint</a></div>
+                        <div class='copyrights_panel'>
+                            <div class='copyrights_panel_wrapper'>
+                                <div class="lang_bar">
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="lang_sel_sel icl-en"><img class="iclflag" src="img/en.png" alt="en" title="English" /> &nbsp;English
+                                                </a>
+                                                <ul>
+                                                    <li class="icl-fr">
+                                                        <a href="#"><img class="iclflag" src="img/fr.png" alt="fr" title="Français" />&nbsp;Français</a>
+                                                    </li>
+                                                    <li class="icl-de">
+                                                        <a href="#"><img class="iclflag" src="img/de.png" alt="de" title="Deutsch" />&nbsp;Deutsch</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class='cws_social_links'><a href='http://twitter.com/' class='cws_social_link' title='Twitter'><i class='share-icon fa fa-twitter'></i></a><a href='http://facebook.com/' class='cws_social_link' title='Facebook'><i class='share-icon fa fa-facebook'></i></a><a href='http://dribbble.com/' class='cws_social_link' title='Dribbble'><i class='share-icon fa fa-dribbble'></i></a><a href='https://plus.google.com/' class='cws_social_link' title='Google'><i class='share-icon fa fa-google-plus'></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / copyright -->
+        </div>
+    </div>
+    <!-- #page -->
+    <div class='scroll_top animated'></div>
+    <div id="lang_sel_footer">
+        <ul>
+            <li>
+                <a href="contact-us.html" class="lang_sel_sel"><img src="img/en.png" alt="English" class="iclflag" title="English" />&nbsp;English</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/fr.png" alt="Français" class="iclflag" title="Français" />&nbsp;Français</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/de.png" alt="Deutsch" class="iclflag" title="Deutsch" />&nbsp;Deutsch</a>
+            </li>
+        </ul>
+    </div>
+    <script type='text/javascript' src='tuner/tuner/js/colorpicker.js'></script>
+    <script type='text/javascript' src='tuner/tuner/js/scripts.js'></script>
+    <script type='text/javascript' src='js/retina_1.3.0.js'></script>
+    <script type='text/javascript' src='js/modernizr.js'></script>
+    <script type='text/javascript' src='js/owl.carousel.js'></script>
+    <script type='text/javascript' src='js/TweenMax.min.js'></script>
+    <script type='text/javascript' src='js/jquery.isotope.min.js'></script>
+    <script type='text/javascript' src='js/jquery.fancybox.js'></script>
+    <script type='text/javascript' src='js/select2.min.js'></script>
+    <script type='text/javascript' src='js/wow.min.js'></script>
+    <script type='text/javascript' src='js/jquery.validate.min.js'></script>
+    <script type='text/javascript' src="js/jquery.form.min.js"></script>
+    <script type='text/javascript' src='js/scripts.js'></script>
+    <script type='text/javascript' src="js/jquery.tweet.js"></script>
+</body>
+
+
+</html>

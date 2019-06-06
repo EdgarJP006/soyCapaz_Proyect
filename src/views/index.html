@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="shortcut icon" href="img/cropped-favicon-192x192.png" />
+        <title> <%=title%> </title>
+    <% include partials/head.html %>
+</head>
+
+<body class="home page wide wave-style">
+    <div class="page">
+        <!-- top panel -->
+       <% include partials/top_panel.html %>
+        <!-- / top panel -->
+        <!-- slider and menu container -->
+        <div class='slider_vs_menu'>
+            <div class='header_cont'>
+                <div class='header_mask'>
+                    <div class='header_pattern'></div>
+                </div>
+                <header class='site_header logo-in-menu' data-menu-after="3">
+                    <div class="header_box">
+                        <div class="container">
+                            <!-- logo -->
+                            <div class="header_logo_part with_border" role="banner">
+                                <a class="logo" href="./"><img src='img/logoChico.png' data-at2x='img/logoChico.png' alt /></a>
+                            </div>
+                            <!-- / logo -->
+                           <!-- Menu Navegación-->
+                            <% include partials/navigation.html %>
+                           <!-- Menu Navegación-->
+                        </div>
+                    </div>
+                </header>
+                <!-- #masthead -->
+            </div>
+            <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
+                <!-- START REVOLUTION SLIDER 5.0.9 fullwidth mode -->
+                <% include partials/silder.html %>
+                    <!-- SLIDE  -->
+                      
+            </div>
+            <!-- END REVOLUTION SLIDER -->
+        </div>
+        <!-- / slider and menu container -->
+        <div class='benefits_area wave'>
+            <!-- canvas -->
+            <div class='cloud_wrapper'>
+                <canvas class='cloud' data-bg-color='#f9e8b2' data-line-color='#ffffff' data-pattern-src='img/dots-pattern.png'></canvas>
+            </div>
+            <!-- / canvas -->
+            <div class='container'>
+                <!-- benefits container -->
+                <div class='benefits_container'>
+                    <!-- benefits item -->
+                    <div id = "cws-widget-cloud1" class="cws-widget">
+                        <div class="widget-title">
+                            <div class='widget_title_box'>
+                                <div class='widget_title_icon_section'><img src='img/games-304vqrsdsyjt42zxc5ydxm.png' data-at2x='img/games-304vqrsdsyjt42zxc5ydxm@2x.png' alt /></div>
+                                <div class='widget_title_text_section'> Aprende los Colores</div>
+                            </div>
+                        </div>
+                        <div class='cws_textwidget_content'>
+                            <div class='text'> Los colores en los  niños favorecen el proceso artístico que a la vez ayuda a fomentar y desarrollar la creatividad en sus dibujos. </div>
+                            <div class='link'><a href='base.html' class='cws_button small'>Aprende</a></div>
+                        </div>
+                    </div>
+                    <!-- / benefits item -->
+                    <!-- benefits item -->
+                    <div id = "cws-widget-cloud2" class="cws-widget">
+                        <div class="widget-title">
+                            <div class='widget_title_box'>
+                                <div class='widget_title_icon_section'><img src='img/activities-304vqs1fhfe8b8ybbneakq.png' data-at2x='img/activities-304vqs1fhfe8b8ybbneakq@2x.png' alt /></div>
+                                <div class='widget_title_text_section'>Aprende los Números</div>
+                            </div>
+                        </div>
+                        <div class='cws_textwidget_content'>
+                            <div class='text'>Actividad de los Números
+                                <br> Para los niños con discapacidad</div>
+                            <div class='link'><a href='#' class='cws_button small'>Aprende</a></div>
+                        </div>
+                    </div>
+                    <!-- / benefits item -->
+                    <!-- benefits item -->
+                    <div id = "cws-widget-cloud3" class="cws-widget">
+                        <div class="widget-title">
+                            <div class='widget_title_box'>
+                                <div class='widget_title_icon_section'><img src='img/education-304vqs5ybpxf691gt0t7nu.png' data-at2x='img/education-304vqs5ybpxf691gt0t7nu@2x.png' alt /></div>
+                                <div class='widget_title_text_section'>Aprende las Letras</div>
+                            </div>
+                        </div>
+                        <div class='cws_textwidget_content'>
+                            <div class='text'>Aprende las letras jugando.
+                            </div>
+                            <div class='link'><a href='#' class='cws_button small'>Aprende</a></div>
+                        </div>
+                    </div>
+                    <!-- / benefits item -->
+                </div>
+                <!-- / benefits container -->
+            </div>
+        </div>
+        <!-- canvas -->
+        <div class="cloud_wrapper">
+            <canvas class="white_cloud"></canvas>
+        </div>
+        <!-- / canvas -->
+        <!-- main container -->
+        <div id="main" class="site-main">
+            <div class="page_content">
+                <!-- pattern conatainer / -->
+                <div class='left-pattern pattern pattern-2'></div>
+<!-- pettaren container / -->
+              <div class='right-pattern pattern pattern-2'></div>
+                <!-- footer image container / -->
+                <div class="footer_image"></div>
+            </div>
+            <!-- svg filter -->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" style='display:none;'>
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+            <!-- / svg filter -->
+        </div>
+        <!-- #main -->
+        <!-- footer -->
+        <% include partials/footer.html %>
+         <!-- footer -->
+    
+    </div>
+    <!-- #page -->
+    
+    <div id="lang_sel_footer">
+        <ul>
+            <li>
+                <a href="index-2.html" class="lang_sel_sel"><img src="img/en.png" alt="English" class="iclflag" title="English" />&nbsp;English</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/fr.png" alt="Français" class="iclflag" title="Français" />&nbsp;Français</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/de.png" alt="Deutsch" class="iclflag" title="Deutsch" />&nbsp;Deutsch</a>
+            </li>
+        </ul>
+    </div>
+    <script type='text/javascript' src='tuner/tuner/js/colorpicker.js'></script>
+    <script type='text/javascript' src='tuner/tuner/js/scripts.js'></script>
+    <script type='text/javascript' src='js/retina_1.3.0.js'></script>
+    <script type='text/javascript' src='js/modernizr.js'></script>
+    <script type='text/javascript' src='js/owl.carousel.js'></script>
+    <script type='text/javascript' src='js/TweenMax.min.js'></script>
+    <script type='text/javascript' src='js/jquery.isotope.min.js'></script>
+    <script type='text/javascript' src='js/jquery.fancybox.js'></script>
+    <script type='text/javascript' src='js/select2.min.js'></script>
+    <script type='text/javascript' src='js/wow.min.js'></script>
+    <script type='text/javascript' src='js/jquery.validate.min.js'></script>
+    <script type='text/javascript' src="js/jquery.form.min.js"></script>
+    <script type='text/javascript' src='js/scripts.js'></script>
+    <script type='text/javascript' src="js/jquery.tweet.js"></script>
+</body>
+
+
+</html>

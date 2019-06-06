@@ -1,0 +1,221 @@
+.page_boxed{
+	max-width: 1250px;
+	margin: 0 auto;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+/* LAYERS */
+.page_boxed,
+.cws_slider_container,
+.site_top_panel,
+.page_title,
+.benefits_area,
+.site_header,
+.page_header_video_wrapper,
+.page_header_video_slider_wrapper{
+	position: relative;
+}
+.cws_slider_container{
+	z-index: 2;
+}
+.site_top_panel,
+.page_title,
+.benefits_area{
+	z-index: 3;
+}
+.page_header_video_wrapper{
+	z-index: 10;
+}
+.page_header_video_slider_wrapper{
+	z-index: 11;
+}
+/* \LAYERS */
+body.wide,
+.page_boxed{
+	background: #fff !important;
+}
+body:not(.page_boxed) .media-part .container{
+	width: auto;
+}
+.container,
+.page-header.logo-left .sticky_container,
+.page-header.logo-right .sticky_container,
+.page-header.logo-center .main-menu,
+.page_content>main .grid_row,
+.fw_row_content_wrapper{
+	width: 1170px;
+	position:relative;
+	margin:0 auto;
+}
+.page_content>main .grid_row.full_width{
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+main{
+	width:100%;
+}
+.page_content:not(:empty){
+	padding: 35px 0;
+}
+.page_content.single_sidebar main{
+	width:870px;
+}
+.page_content.double_sidebar main{
+	width:570px;
+}
+aside{
+	width:270px;
+}
+.page_content>.container{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	direction: ltr;
+}
+.page_content aside.sb_left{
+   -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+.page_content aside.sb_right{
+   -webkit-box-ordinal-group: 4;
+   -moz-box-ordinal-group: 4;
+   -webkit-order: 3;
+   -ms-flex-order: 3;
+   order: 3;	
+}
+.page_content main{
+   -webkit-box-ordinal-group: 3;
+   -moz-box-ordinal-group: 3;
+   -webkit-order: 2;
+   -ms-flex-order: 2;
+   order: 2;	
+}
+.page_content>.container>aside.sb_left{
+	margin-right:30px;
+}
+.page_content>.container>aside.sb_right{
+	margin-left:30px;
+}
+/* FOR IE 9 */
+.page_content>.container,
+.page_content>.container>*{
+	display: block\9;
+}
+aside.sb_left,
+main{
+	float: left\9;
+}
+aside.sb_right{
+	float: right\9;
+}
+.page_content>.container:after{
+	display: none;
+}
+.page_content>.container:after{
+	content: "";
+	display: block\9;
+	clear: both\9;
+}
+/* \FOR IE 9 */	
+@media screen and (max-width: 1190px){
+	.page_boxed{
+		max-width: 1000px;
+	}
+	.container,
+	.page-header.logo-left .sticky_container,
+	.page-header.logo-right .sticky_container,
+	.page-header.logo-center .main-menu,
+	.page_content>main>.grid_row,
+	.page_content>main .grid_row{
+		width: 940px;
+	}
+	aside{
+		width: 220px;
+	}
+	.page_content>.container>aside.sb_left{
+		margin-right: 20px;
+	}	
+	.page_content>.container>aside.sb_right{
+		margin-left: 20px;
+	}
+	.page_content.single_sidebar main{
+		width: 700px;
+	}
+	.page_content.double_sidebar main{
+		width: 460px;
+	}
+}
+@media screen and (max-width: 980px){
+	.page_boxed{
+		max-width: 788px;
+	}
+	.container,
+	.page-header.logo-left .sticky_container,
+	.page-header.logo-right .sticky_container,
+	.page-header.logo-center .main-menu,
+	.page_content>main>.grid_row,
+	.page_content>main .grid_row{
+		width: 738px;
+	}
+	aside{
+		width: 171px;
+	}
+	.page_content>.container>aside.sb_left{
+		margin-right: 18px;
+	}	
+	.page_content>.container>aside.sb_right{
+		margin-left: 18px;
+	}
+	.page_content.single_sidebar main{
+		width: 549px;
+	}
+	.page_content.double_sidebar main{
+		width: 360px;
+	}
+}
+@media screen and (max-width: 767px){
+	.page_content>.container>aside.sb_left + main{
+		margin-top: 60px;
+	}	
+	.container,
+	.page-header.logo-left .sticky_container,
+	.page-header.logo-right .sticky_container,
+	.page-header.logo-center .main-menu,
+	.page_content>main>.grid_row,
+	.page_content>main .grid_row{
+		width: auto;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.page_content>.container{
+		-webkit-box-direction: normal;
+	    -moz-box-direction: normal;
+	    -webkit-box-orient: vertical;
+	    -moz-box-orient: vertical;
+	    -webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	}
+	.page_content>.container>*{
+		width: 100% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	.page_content>.container>.sb_left+.sb_right+main,
+	.page_content>.container>.sb_right{
+		margin-top: 60px;
+	}
+	/* FOR IE 9 */
+	.page_content>.container>.sb_right{
+		margin-top: 0\9;
+	}
+	.page_content>.container>*+*{
+		margin-top: 60px\9 !important;
+	}
+	/* \FOR IE 9 */
+}

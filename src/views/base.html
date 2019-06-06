@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/cropped-favicon-192x192.png" />
+    <title><%=title %></title>
+    <meta charset="UTF-8">
+	<title>Pikachu Puzzle</title>
+	<link rel="stylesheet" href="css/main.css">
+    <% include partials/head.html %>
+</head>
+
+<body class="page wide wave-style">
+    <div class="page">
+        <!-- top panel -->
+      
+        <!-- / top panel --> 
+        <!-- header container -->
+        <div class='header_cont'>
+            <div class='header_mask'>
+                <div class='header_pattern'></div>
+                <div class='header_img'></div>
+            </div>
+            <header class='site_header logo-in-menu' data-menu-after="3">
+                <div class="header_box">
+                    <div class="container">
+                        <!-- logo -->
+                        <div class="header_logo_part with_border" role="banner">
+                            <a class="logo" href="./"><img src='img/logoChico.png' data-at2x='img/logo1-304vqrnv7ccxz47xp4tw5m@2x.png' alt /></a>
+                        </div>
+                        <!-- / logo -->
+                        <!-- menu -->
+                       <!-- Menu Navegación-->
+                       <% include partials/navigation.html %>
+                       <!-- Menu Navegación-->
+                        <!-- / menu -->
+                    </div>
+                </div>
+            </header>
+            <!-- #masthead -->
+        </div>
+        <!-- breadcrumbs -->
+        <section class='page_title wave'>
+            <div class='container'>
+                <div class='title'>
+                    <h1>Rompecabeza</h1></div>
+                <nav class="bread-crumbs"><a href="index-2.html" >Inicio</a><i class="delimiter fa fa-chevron-right"></i><span class="current">Dinamicas</span></nav>
+                <!-- .breadcrumbs -->
+            </div>
+            <canvas class='breadcrumbs' data-bg-color='#f8f2dc' data-line-color='#f9e8b2'></canvas>
+        </section>
+        <!-- breadcrumbs / -->
+        <!-- main container -->
+        <div id="main" class="site-main">
+            <div class="page_content">
+                <!-- pattern container / -->
+                              <main>
+                    <!-- benefits section  Rompe Cabezas -->
+                    <svg width="600" height="600" id="entorno">
+                            <g id="fondo"><image xlink:href="https://raw.githubusercontent.com/NestorPlasencia/pikachu-puzzle/master//pikachu.png" width="400" height="400" x="200" y="100"></g>
+                        <g class="padre" id="0"><image xlink:href="https://raw.githubusercontent.com/NestorPlasencia/pikachu-puzzle/master/1.png" class="movil"></g>
+                        <g class="padre" id="1"><image xlink:href="https://raw.githubusercontent.com/NestorPlasencia/pikachu-puzzle/master/2.png" class="movil"></g>
+                        <g class="padre" id="2"><image xlink:href="https://raw.githubusercontent.com/NestorPlasencia/pikachu-puzzle/master/3.png" class="movil"></g>
+                        <g class="padre" id="3"><image xlink:href="https://raw.githubusercontent.com/NestorPlasencia/pikachu-puzzle/master/4.png" class="movil"></g>
+                        <g class="padre" id="4"><image xlink:href="https://raw.githubusercontent.com/NestorPlasencia/pikachu-puzzle/master/5.png" class="movil"></g>
+                        <g class="padre" id="5"><image xlink:href="https://raw.githubusercontent.com/NestorPlasencia/pikachu-puzzle/master/6.png" class="movil"></g>
+                        <g class="padre" id="6"><image xlink:href="https://raw.githubusercontent.com/NestorPlasencia/pikachu-puzzle/master/7.png" class="movil"></g>
+                        <g class="padre" id="7"><image xlink:href="https://raw.githubusercontent.com/NestorPlasencia/pikachu-puzzle/master/8.png" class="movil"></g>
+                        <g class="padre" id="8"><image xlink:href="https://raw.githubusercontent.com/NestorPlasencia/pikachu-puzzle/master/9.png" class="movil"></g>
+                    </svg>
+                    <audio id="win" src="https://raw.githubusercontent.com/NestorPlasencia/PikaPuzzle/master/media/win.mp3"></audio>
+                        
+                    
+                    
+                    <!-- benefits section / -->
+              
+                    <!-- benefits section / -->
+                </main>
+              
+                <div class="footer_image"></div>
+            </div>
+            <!-- svg filter -->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" style='display:none;'>
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+            <!-- svg filter / -->
+        </div>
+        <!-- #main -->
+        <!-- footer -->
+        <% include partials/footer.html %>
+    </div>
+    <!-- #page -->
+    <div class='scroll_top animated'></div>
+    <div id="lang_sel_footer">
+        <ul>
+            <li>
+                <a href="features-benefits.html" class="lang_sel_sel"><img src="img/en.png" alt="English" class="iclflag" title="English" />&nbsp;English</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/fr.png" alt="Français" class="iclflag" title="Français" />&nbsp;Français</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/de.png" alt="Deutsch" class="iclflag" title="Deutsch" />&nbsp;Deutsch</a>
+            </li>
+        </ul>
+    </div>
+    <script type='text/javascript' src='tuner/tuner/js/colorpicker.js'></script>
+    <script type='text/javascript' src='tuner/tuner/js/scripts.js'></script>
+    <script type='text/javascript' src='js/retina_1.3.0.js'></script>
+    <script type='text/javascript' src='js/modernizr.js'></script>
+    <script type='text/javascript' src='js/owl.carousel.js'></script>
+    <script type='text/javascript' src='js/TweenMax.min.js'></script>
+    <script type='text/javascript' src='js/jquery.isotope.min.js'></script>
+    <script type='text/javascript' src='js/jquery.fancybox.js'></script>
+    <script type='text/javascript' src='js/select2.min.js'></script>
+    <script type='text/javascript' src='js/wow.min.js'></script>
+    <script type='text/javascript' src='js/jquery.validate.min.js'></script>
+    <script type='text/javascript' src="js/jquery.form.min.js"></script>
+    <script type='text/javascript' src='js/scripts.js'></script>
+    <script type='text/javascript' src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
