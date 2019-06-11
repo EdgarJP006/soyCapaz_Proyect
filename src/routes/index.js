@@ -9,4 +9,8 @@ router.get('/', (req, res)=>{
     res.render('base.html', { title: 'Rompe Cabezas'});
  });
 
+ router.get('/color.html', (req, res)=>{
+   res.render('color.html', { title: 'Colors'});
+});
+
  module.exports = router;

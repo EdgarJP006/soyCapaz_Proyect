@@ -212,7 +212,10 @@ body {
     line-height: 26px;
     word-spacing: 0px;
     letter-spacing: 0px;
-    color: #9f9e9e;
+    color: rgb(255, 51, 51);
+}
+#texthuevito2{
+    color: rgb(0, 0, 0);
 }
 
 .cws-widget ul:not(.tweet_list) li>a,
@@ -287,7 +290,7 @@ input[type="radio"]:checked:before,
 .site_top_panel .site_top_panel_toggle:after,
 .footer_container .woocommerce-product-search:before,
 .scroll_top {
-    background-color: #26b4d7;
+    background-color: #1b8daa;
 }
 
 .tp-leftarrow.round,
@@ -2316,6 +2319,21 @@ HEADER
     left: -20px;
     top: 0;
     z-index: 1;
+}
+#nav_menu1{
+    background-color: #35e27e
+}
+#nav_menu2{
+    background-color: #ad6eb0;
+}
+#nav_menu3{
+    background-color: #ff6766;
+}
+#nav_menu4{
+    background-color: rgb(250, 49, 49);
+}
+#nav_menu5{
+    background-color:blue;
 }
 
 .main-nav-container .main-menu>.menu-item:first-child>a>.canvas_wrapper canvas {
@@ -7502,7 +7520,7 @@ PORTFOLIO
     width: 70%;
     height: calc(100% + 60px);
     border-radius: 100%;
-    //ackground: rgb(255, 239, 19);
+    /*ackground: rgb(255, 239, 19);*/
     position: absolute;
     top: -30px;
     left: 15%;
@@ -7515,7 +7533,7 @@ PORTFOLIO
     background: rgb(234, 110, 6);
 }
 #cws-widget-cloud3{
-    background: rgb(6, 189, 234);
+    background: rgb(6, 21, 234);
 }
 
 .benefits_area.wave .cws-widget>*:first-child:not(.search-form):before,
