@@ -1,1 +1,10 @@
 Para instalar el express ejs y morgan tuve que agregar --save a la ultima linea
+
+inicializar monogoDB: sudo service mongod start
+
+Ver tablas de base de datos mongodb
+
+$ mongo
+> use crud-mongo
+> show collections
+> db.tasks.find().pretty()

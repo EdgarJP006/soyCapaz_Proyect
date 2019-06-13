@@ -1,0 +1,221 @@
+#camiah {
+    bottom: 15px;
+    position: fixed;
+    right: 15px;
+    width: 25px;
+  }
+  body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 25px 0 25px 0;
+  }
+  table, td {
+    border-collapse: collapse !important;
+  }
+  input {
+    display: none;
+  }
+  label {
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
+    .widthMobile {
+      width: 320px !important;
+    }
+    .photo {
+      width: 100% !important;
+      height: auto !important;
+    }
+    .mobileSize {
+      width: 320px !important;
+      height: 384px !important;
+    }
+    .mobileBackground {
+      background-size: 100% 100% !important;
+      height: auto !important;
+    }
+    .mobileSquares {
+      width: 64px !important;
+      height: 64px !important;
+    }
+    .mobileSquaresHalf {
+      width: 64px !important;
+      height: 32px !important;
+    }
+    .mobileFont {
+      font-size: 12px !important;
+      line-height: 13px !important;
+    }
+    .label4a {
+      width: 16px !important;
+      height: 30px !important;
+    }
+    .label4b, .label7b, .label8b {
+      width: 50px !important;
+      height: 30px !important;
+    }
+    .label4c, .label5b, .label6b, .label8a {
+      width: 40px !important;
+      height: 30px !important;
+    }
+    .label5a, .label5c {
+      width: 25px !important;
+      height: 30px !important;
+    }
+    .label6a, .label7a {
+      width: 21px !important;
+      height: 30px !important;
+    }
+    .mobilePaddinglabel4a, .mobilePaddinglabel5a, .mobilePaddinglabel8a {
+      padding:10px 0 6px 0 !important;
+    }
+    .mobilePaddinglabel4c, .mobilePaddinglabel5c, .mobilePaddinglabel7a {
+      padding:3px 0 13px 0 !important;
+    }
+    .mobilePaddinglabel5b, .mobilePaddinglabel6a {
+      padding:0 0 16px 0 !important;
+    }
+    .mobilePaddinglabel6b, .mobilePaddinglabel8b {
+      padding:16px 0 0 0 !important;
+    }
+    .mobilePaddinglabel4b, .mobilePaddinglabel7b {
+      padding:14px 0 2px 0 !important;
+    }
+  }
+  #color1:checked~* .color1,
+  #color2:checked~* .color2,
+  #color3:checked~* .color3,
+  #color4:checked~* .color4,
+  #color5:checked~* .color5,
+  #color6:checked~* .color6,
+  #color7:checked~* .color7,
+  #color8:checked~* .color8 {
+    width: 54px;
+    height: 60px;
+  }
+  #layer1a:checked~* .layer1a {
+    background-image: url(https://camiah.com/codepen/paint-by-number-1a.png);
+    background-size: 500px 600px;
+  }
+  #layer2a:checked~* .layer2a {
+    background-image: url(https://camiah.com/codepen/paint-by-number-2a.png);
+    background-size: 500px 600px;
+  }
+  #layer2b:checked~* .layer2b {
+    background-image: url(https://camiah.com/codepen/paint-by-number-2b.png);
+    background-size: 500px 600px;
+  }
+  #layer3a:checked~* .layer3a {
+    background-image: url(https://camiah.com/codepen/paint-by-number-3a.png);
+    background-size: 500px 600px;
+  }
+  #layer4a:checked~* .layer4a {
+    background-image: url(https://camiah.com/codepen/paint-by-number-4a.png);
+    background-size: 500px 600px;
+  }
+  #layer4b:checked~* .layer4b {
+    background-image: url(https://camiah.com/codepen/paint-by-number-4b.png);
+    background-size: 500px 600px;
+  }
+  #layer4c:checked~* .layer4c {
+    background-image: url(https://camiah.com/codepen/paint-by-number-4c.png);
+    background-size: 500px 600px;
+  }
+  #layer5a:checked~* .layer5a {
+    background-image: url(https://camiah.com/codepen/paint-by-number-5a.png);
+    background-size: 500px 600px;
+  }
+  #layer5b:checked~* .layer5b {
+    background-image: url(https://camiah.com/codepen/paint-by-number-5b.png);
+    background-size: 500px 600px;
+  }
+  #layer5c:checked~* .layer5c {
+    background-image: url(https://camiah.com/codepen/paint-by-number-5c.png);
+    background-size: 500px 600px;
+  }
+  #layer6a:checked~* .layer6a {
+    background-image: url(https://camiah.com/codepen/paint-by-number-6a.png);
+    background-size: 500px 600px;
+  }
+  #layer6b:checked~* .layer6b {
+    background-image: url(https://camiah.com/codepen/paint-by-number-6b.png);
+    background-size: 500px 600px;
+  }
+  #layer7a:checked~* .layer7a {
+    background-image: url(https://camiah.com/codepen/paint-by-number-7a.png);
+    background-size: 500px 600px;
+  }
+  #layer7b:checked~* .layer7b {
+    background-image: url(https://camiah.com/codepen/paint-by-number-7b.png);
+    background-size: 500px 600px;
+  }
+  #layer8a:checked~* .layer8a {
+    background-image: url(https://camiah.com/codepen/paint-by-number-8a.png);
+    background-size: 500px 600px;
+  }
+  #layer8b:checked~* .layer8b {
+    background-image: url(https://camiah.com/codepen/paint-by-number-8b.png);
+    background-size: 500px 600px;
+  }
+  #layer1a:checked~* .color1,
+  #layer1a:checked~* .label1a,
+  #layer2a:checked~ #layer2b:checked~* .color2,
+  #layer2a:checked~* .label2a,
+  #layer2b:checked~* .label2b,
+  #layer3a:checked~* .color3,
+  #layer3a:checked~* .label3a,
+  #layer4a:checked~ #layer4b:checked~ #layer4c:checked~* .color4,
+  #layer4a:checked~* .label4a,
+  #layer4b:checked~* .label4b,
+  #layer4c:checked~* .label4c,
+  #layer5a:checked~ #layer5b:checked~ #layer5c:checked~* .color5,
+  #layer5a:checked~* .label5a,
+  #layer5b:checked~* .label5b,
+  #layer5c:checked~* .label5c,
+  #layer6a:checked~ #layer6b:checked~* .color6,
+  #layer6a:checked~* .label6a,
+  #layer6b:checked~* .label6b,
+  #layer7a:checked~ #layer7b:checked~* .color7,
+  #layer7a:checked~* .label7a,
+  #layer7b:checked~* .label7b,
+  #layer8a:checked~ #layer8b:checked~* .color8,
+  #layer8a:checked~* .label8a,
+  #layer8b:checked~* .label8b,
+  #layer1a:checked~ #layer2a:checked~ #layer2b:checked~ #layer3a:checked~ #layer4a:checked~ #layer4b:checked~ #layer4c:checked~ #layer5a:checked~ #layer5b:checked~ #layer5c:checked~ #layer6a:checked~ #layer6b:checked~ #layer7a:checked~ #layer7b:checked~ #layer8a:checked~ #layer8b:checked~* .main {
+    font-size: 0 !important;
+    line-height: 0 !important;
+    display: none !important;
+    max-width: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+  }
+  #color1:checked~* .label1a,
+  #color2:checked~* .label2a,
+  #color2:checked~* .label2b,
+  #color3:checked~* .label3a,
+  #color4:checked~* .label4a,
+  #color4:checked~* .label4b,
+  #color4:checked~* .label4c,
+  #color5:checked~* .label5a,
+  #color5:checked~* .label5b,
+  #color5:checked~* .label5c,
+  #color6:checked~* .label6a,
+  #color6:checked~* .label6b,
+  #color7:checked~* .label7a,
+  #color7:checked~* .label7b,
+  #color8:checked~* .label8a,
+  #color8:checked~* .label8b,
+  #layer1a:checked~ #layer2a:checked~ #layer2b:checked~ #layer3a:checked~ #layer4a:checked~ #layer4b:checked~ #layer4c:checked~ #layer5a:checked~ #layer5b:checked~ #layer5c:checked~ #layer6a:checked~ #layer6b:checked~ #layer7a:checked~ #layer7b:checked~ #layer8a:checked~ #layer8b:checked~* .printButton {
+    display: block !important;
+  }
+  @media print {
+    .wow {
+      display: block !important;
+      overflow: visible !important;
+      max-width: inherit !important;
+      max-height: inherit !important;
+    }
+    .noprint {
+      display: none !important;
+    }
+  }

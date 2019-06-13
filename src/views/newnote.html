@@ -1,0 +1,178 @@
+    <% include partials/head.html %>
+    <link rel="stylesheet" href="css/main.css">
+
+
+<body class="page wide wave-style">
+    <div class="page">
+        <!-- top panel -->
+      
+        <!-- / top panel --> 
+        <!-- header container -->
+        <div class='header_cont'>
+            <div class='header_mask'>
+                <div class='header_pattern'></div>
+                <div class='header_img'></div>
+            </div>
+            <header class='site_header logo-in-menu' data-menu-after="3">
+                <div class="header_box">
+                    <div class="container">
+                        <!-- logo -->
+                        <div class="header_logo_part with_border" role="banner">
+                            <a class="logo" href="./"><img src='img/logoChico.png' data-at2x='img/logo1-304vqrnv7ccxz47xp4tw5m@2x.png' alt /></a>
+                        </div>
+                        <!-- / logo -->
+                        <!-- menu -->
+                       <!-- Menu Navegación-->
+                       <% include partials/navigation.html %>
+                       <!-- Menu Navegación-->
+                        <!-- / menu -->
+                    </div>
+                </div>
+            </header>
+            <!-- #masthead -->
+        </div>
+        <!-- breadcrumbs -->
+        <section class='page_title wave'>
+            <div class='container'>
+                <div class='title'>
+                    <h1>Formulario </h1>
+
+                    </div>
+                <nav class="bread-crumbs"><a href="./" >Inicio</a><i class="delimiter fa fa-chevron-right"></i><span class="current">Dinamicas</span></nav>
+                <!-- .breadcrumbs -->
+            </div>
+            <canvas class='breadcrumbs' data-bg-color='#f8f2dc' data-line-color='#f9e8b2'></canvas>
+        </section>
+        <!-- breadcrumbs / -->
+        <!-- main container -->
+        <div id="main" class="site-main">
+            <div class="page_content">
+                <!-- pattern container / -->
+                              <main>
+                    <!-- benefits section  MIS ACCIONES-->
+                            <div class="container">
+                                <div class="row">
+                                    <!--Form -->
+                                    <div class="col-md-5">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <form action="/add" method="POST">
+                                                    <div class="form-group">
+                                                        <input type="text" name="title" placeholder="Ingresar nombre" calss="form-control">       
+                                                    </div>
+                                                    <div class="form-group">
+                                                         <input type="text" name="description" class="form-control" placeholder="Ingresar apellido"></input>                                                       
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text"  placeholder="Ingresar discapacidad" calss="form-control">       
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text"  placeholder="Ingresar acudiente" calss="form-control">       
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                          Sexo
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                          <a class="dropdown-item" href="#">Femenino</a>
+                                                          <a class="dropdown-item" href="#">Masculino</a>
+                                                        </div>
+                                                      </div>
+                                                      <br>
+                                                      <div class="form-group">
+                                                        <input type="text"  placeholder="Ingresar dirección" calss="form-control">       
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text"  placeholder="Ingresar edad" calss="form-control">       
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary btn-block"> Ingresar</button>
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!--List-->
+                                    <div class="col-md-7">
+                                        <table class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th> N°</th>
+                                                    <th>Nombre</th>
+                                                    <th>Apellido</th>
+                                                    <th>Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <% for(var i = 0; i < tasks.length; i++){ %>
+                                                   <tr>
+                                                       <td> <%= i + 1%></td>
+                                                       <td><%= tasks[i].title %></td>
+                                                       <td><%= tasks[i].description %></td>
+                                                       <td>
+                                                           <a href="/turn/<%= tasks[i].id %>" 
+                                                            class="<%= tasks[i].status ? 'btn btn-success' : 'btn btn-dark'%>">
+                                                            Realizado
+                                                        </a>
+                                                           <a href="/delete/<%= tasks[i].id %>" class="btn btn-danger">Eliminar</a>
+                                                           <a href="/edit/<%= tasks[i].id %>" class="btn btn-info">Editar</a>
+                                                       </td>
+                                                   </tr>
+
+                                               <% } %>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+                                </div>
+
+                                
+                            </div>    
+              
+                    <!-- benefits section / -->
+                </main>
+              
+                <div class="footer_image"></div>
+            </div>
+            <!-- svg filter -->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" style='display:none;'>
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+            <!-- svg filter / -->
+        </div>
+        <!-- #main -->
+        <!-- footer -->
+        <% include partials/footer.html %>
+    </div>
+    <!-- #page -->
+    <div class='scroll_top animated'></div>
+    <div id="lang_sel_footer">
+        <ul>
+            <li>
+                <a href="features-benefits.html" class="lang_sel_sel"><img src="img/en.png" alt="English" class="iclflag" title="English" />&nbsp;English</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/fr.png" alt="Français" class="iclflag" title="Français" />&nbsp;Français</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/de.png" alt="Deutsch" class="iclflag" title="Deutsch" />&nbsp;Deutsch</a>
+            </li>
+        </ul>
+    </div>
+    <% include partials/scritsts.html %>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
