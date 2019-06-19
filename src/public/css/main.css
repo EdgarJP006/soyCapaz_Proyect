@@ -159,7 +159,7 @@ a,
 .select2-drop .select2-results .select2-highlighted,
 .cws-widget .parent_archive .widget_archive_opener,
 .cws-widget .has_children .opener {
-    color: #26b4d7;
+    color: #000000;
 }
 
 .page_title h1,
@@ -7533,7 +7533,7 @@ PORTFOLIO
     background: rgb(234, 110, 6);
 }
 #cws-widget-cloud3{
-    background: rgb(6, 21, 234);
+    background: rgb(6, 162, 234);
 }
 
 .benefits_area.wave .cws-widget>*:first-child:not(.search-form):before,
